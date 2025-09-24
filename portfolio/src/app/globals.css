@@ -14,10 +14,3 @@
 .animate-fadeIn {
   animation: fadeIn 0.4s ease-in-out;
 }
-
-.divider {
-  width: 100%;
-  height: 60px; /* altura do divisor */
-  background: linear-gradient(to right, #d1d5db, #9ca3af, #d1d5db); /* tons de cinza claro */
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0 100%); /* leve curva */
-}

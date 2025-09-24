@@ -17,8 +17,8 @@ export default function Forca() {
   const maxTentativas = 6;
 
   const [palavra, setPalavra] = useState("");
-  const [letrasCorretas, setLetrasCorretas] = useState([]);
-  const [letrasErradas, setLetrasErradas] = useState([]);
+  const [letrasCorretas, setLetrasCorretas] = useState<string[]>([]);
+  const [letrasErradas, setLetrasErradas] = useState<string[]>([]);
   const [status, setStatus] = useState("jogando");
 
   const novaPalavra = () => {
@@ -47,16 +47,16 @@ export default function Forca() {
     }
   }, [letrasCorretas, letrasErradas, palavra]);
 
-  const clicarLetra = (letra) => {
+    const clicarLetra = (letra: string) => {
     if (status !== "jogando") return;
     if (letrasCorretas.includes(letra) || letrasErradas.includes(letra)) return;
 
     if (palavra.includes(letra)) {
-      setLetrasCorretas([...letrasCorretas, letra]);
+        setLetrasCorretas([...letrasCorretas, letra]);
     } else {
-      setLetrasErradas([...letrasErradas, letra]);
+        setLetrasErradas([...letrasErradas, letra]);
     }
-  };
+    };
 
   const displayPalavra = palavra
     ? palavra

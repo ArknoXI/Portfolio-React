@@ -57,7 +57,7 @@ const skills = [
 export default function Skills() {
   const [selectedSkillName, setSelectedSkillName] = useState(null);
 
-  const handleToggle = (name) => {
+  const handleToggle = (name: any) => {
     setSelectedSkillName((prev) => (prev === name ? null : name));
   };
 
