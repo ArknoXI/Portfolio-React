@@ -18,7 +18,7 @@ const skills = [
   },
   {
     name: "Python",
-    icon: "/icons/python.png",
+    icon: "/icons/Python.png",
     description:
       "Aprendi a utilizar a linguagem Python ao inicio da faculdade, por ser uma linguagem de utilização simples foi um conhecimento rapido de adquirir.",
   },
